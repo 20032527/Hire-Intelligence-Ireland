@@ -1,3 +1,4 @@
+// server/index.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -8,17 +9,22 @@ const rentalRoutes = require('./routes/rentalRoutes');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  credentials: true
+}));
+
 app.use(bodyParser.json());
 
 app.use('/v1/auth', authRoutes);
 app.use('/v1/gadgets', gadgetRoutes);
 app.use('/v1/rentals', rentalRoutes);
 
-
+// Error handling
 app.use((err, req, res, next) => {
   console.error(err);
   res.status(500).json({ message: 'Server error' });
 });
 
-module.exports = app; 
+module.exports = app; // export app, don't start server here
