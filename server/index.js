@@ -1,4 +1,3 @@
-// server/index.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -21,10 +20,9 @@ app.use('/v1/auth', authRoutes);
 app.use('/v1/gadgets', gadgetRoutes);
 app.use('/v1/rentals', rentalRoutes);
 
-// Error handling
 app.use((err, req, res, next) => {
   console.error(err);
   res.status(500).json({ message: 'Server error' });
 });
 
-module.exports = app; // export app, don't start server here
+module.exports = app; 
