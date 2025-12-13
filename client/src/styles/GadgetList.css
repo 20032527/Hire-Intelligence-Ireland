@@ -1,0 +1,133 @@
+
+.page-container {
+  padding: 30px 40px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f7fa;
+  min-height: 60vh;
+}
+
+.page-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #333;
+}
+
+.gadget-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.gadget-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease-in-out;
+  text-align: left;
+}
+
+.gadget-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.gadget-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.gadget-card p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+
+.admin-table {
+  width: 95%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+}
+
+.admin-table thead {
+  background: #3f51b5;
+  color: white;
+}
+
+.admin-table th {
+  padding: 14px;
+  text-align: left;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.admin-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+
+.admin-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.admin-table tr:hover {
+  background-color: #eef1ff;
+}
+
+
+
+.admin-table button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-right: 5px;
+  transition: 0.2s;
+}
+
+
+.admin-table button:nth-child(1) {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.admin-table button:nth-child(1):hover {
+  background-color: #3243a0;
+}
+
+
+.admin-table button:nth-child(2) {
+  background-color: #e53935;
+  color: white;
+}
+
+.admin-table button:nth-child(2):hover {
+  background-color: #c62828;
+}
+
+
+.admin-table input {
+  width: 90%;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.admin-table input:focus {
+  border-color: #3f51b5;
+}
