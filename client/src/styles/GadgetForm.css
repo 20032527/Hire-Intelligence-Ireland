@@ -1,0 +1,88 @@
+   .page-container {
+    background: #fff;
+    width: 550px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.7s ease-in-out;
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  
+  .page-container h2 {
+    color: #000000; 
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  
+  .gadget-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gadget-form input {
+    padding: 12px 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .gadget-form input:focus {
+    border-color: #000000; 
+    box-shadow: 0 0 5px #000000;
+    outline: none;
+  }
+  
+  .gadget-form button {
+    padding: 12px 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: #000000; 
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+  }
+  
+  .gadget-form button:hover {
+    background-color: #333333; 
+    transform: scale(1.02);
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .page-container {
+      width: 90%;
+      padding: 30px 20px;
+    }
+  
+    .page-container h2 {
+      font-size: 22px;
+    }
+  
+    .gadget-form input,
+    .gadget-form button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
