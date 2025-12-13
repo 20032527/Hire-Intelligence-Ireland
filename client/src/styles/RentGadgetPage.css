@@ -1,0 +1,33 @@
+.page-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .rent-box {
+    background: white;
+    width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rent-box select,
+  .rent-box input {
+    margin: 10px 0;
+    padding: 12px 3px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+  }
+  
+  .rent-box button {
+    background: #000000;
+    padding: 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
