@@ -10,7 +10,7 @@ body {
     align-items: center;
   }
   
-  /* Main Dashboard Container */
+  
   .dashboard {
     background: #fff;
     width: 400px;
@@ -21,7 +21,7 @@ body {
     animation: fadeIn 0.7s ease-in-out;
   }
   
-  /* Welcome Text */
+  
   .dashboard h2 {
     color: #0d0e0d;
     font-size: 26px;
@@ -35,7 +35,7 @@ body {
     margin-bottom: 25px;
   }
   
-  /* Links styled as buttons */
+  
   .dashboard a {
     display: block;
     background: #686c68;
@@ -54,7 +54,7 @@ body {
     transform: scale(1.02);
   }
   
-  /* Logout Button */
+  
   .dashboard button {
     background: #2e302e;
     color: #fff;
@@ -73,7 +73,7 @@ body {
     transform: scale(1.05);
   }
   
-  /* Animation */
+  
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -85,7 +85,7 @@ body {
     }
   }
   
-  /* Responsive Design */
+  
   @media (max-width: 450px) {
     .dashboard {
       width: 90%;
