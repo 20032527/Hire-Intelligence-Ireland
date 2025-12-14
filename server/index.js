@@ -7,6 +7,15 @@ const gadgetRoutes = require('./routes/gadgetRoutes');
 const rentalRoutes = require('./routes/rentalRoutes');
 
 const app = express();
+const PORT = process.env.PORT || 10000;
+
+app.get("/", (req, res) => {
+  res.send("API running");
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 app.use(cors({
   origin: 'http://localhost:3000',
