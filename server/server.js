@@ -13,6 +13,7 @@ const connectDB = async () => {
     process.exit(1);
   }
 };
+connectDB();
 mongoose
   .connect(MONGO_URI)
   .then(() => {
