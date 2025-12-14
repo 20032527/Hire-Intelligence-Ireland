@@ -2,9 +2,10 @@
 Run application(command):
 
 cd server
+
 npm run prod
 
-Run Test
+Run Test:
 
 cd server
 
