@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:5001/v1",
+  baseURL: "https://hire-intelligence-ireland-2.onrender.com",
 });
 
 instance.interceptors.request.use((config) => {
