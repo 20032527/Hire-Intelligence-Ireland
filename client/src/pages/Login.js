@@ -57,7 +57,7 @@ export default function Login() {
         <button type="submit">Login</button>
       </form>
 
-      {/* ✅ Add Register link below the login form */}
+      
       <p style={{ marginTop: "10px" }}>
         Don't have an account?{" "}
         <Link to="/register" style={{ color: "#007bff", textDecoration: "none" }}>
