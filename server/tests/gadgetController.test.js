@@ -6,11 +6,13 @@ const {
   remove
 } = require("../controller/gadgetController");
 
+/* Mock Gadget model so DB is not used */
 
 jest.mock("../models/Gadget");
 
 describe("Gadget Controller (Unit Tests)", () => {
   
+  /* Fake response object */
   const mockRes = () => {
     return {
       status: jest.fn().mockReturnThis(),
@@ -23,6 +25,7 @@ describe("Gadget Controller (Unit Tests)", () => {
     const req = { body: { name: "Phone", pricePerDay: 20 } };
     const res = mockRes();
 
+    /* Mock save() */
     Gadget.mockImplementation(() => ({
       save: jest.fn()
     }));

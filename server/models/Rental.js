@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const RentalSchema = new mongoose.Schema({
+
+  /* User who rented the gadget */
+    /* Ref: https://mongoosejs.com/docs/populate.html */
+
   user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: false },
   gadget: { type: mongoose.Schema.Types.ObjectId, ref: 'Gadget', required: true },
   qty: { type: Number, required: true, default: 1 },

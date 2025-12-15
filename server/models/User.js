@@ -7,6 +7,9 @@ const userSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+
+    /* User email (unique) */
+    /* Ref: https://mongoosejs.com/docs/schematypes.html#strings */
     email: {
       type: String,
       required: true,
@@ -18,6 +21,10 @@ const userSchema = new mongoose.Schema(
       required: true,
       minlength: 6,
     },
+
+    /* User role */
+    /* Ref: https://mongoosejs.com/docs/schematypes.html#strings */
+
     role: {
       type: String,
       enum: ["customer", "admin"],

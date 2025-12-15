@@ -5,6 +5,7 @@ const { MongoMemoryServer } = require("mongodb-memory-server");
 const Gadget = require("../models/Gadget");
 let gadgetRoutes = require("../routes/gadgetRoutes");
 
+/* Mock auth so tests don't need real JWT */
 
 jest.mock("../middleware/authMiddleware", () => ({
   auth: (req, res, next) => next()
@@ -19,17 +20,23 @@ app.use("/api/gadgets", gadgetRoutes);
 let mongoServer;
 
 describe("Gadget API Integration Tests (In-Memory DB)", () => {
+
+  /* Start in-memory MongoDB before tests */
+
   beforeAll(async () => {
     mongoServer = await MongoMemoryServer.create();
     const uri = mongoServer.getUri();
     await mongoose.connect(uri, { dbName: "testdb" });
   });
 
+  /* Cleanup DB after all tests */
   afterAll(async () => {
     await mongoose.connection.dropDatabase();
     await mongoose.connection.close();
     await mongoServer.stop();
   });
+
+    /* Clear gadgets after each test */
 
   afterEach(async () => {
     await Gadget.deleteMany({});
