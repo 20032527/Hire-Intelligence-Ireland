@@ -3,6 +3,9 @@ import axios from "../api/axios";
 import { useNavigate } from "react-router-dom";
 
 export default function Register() {
+
+  // Stores registration form data
+  // Ref: https://react.dev/learn/state-a-components-memory
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -12,6 +15,8 @@ export default function Register() {
   });
   const navigate = useNavigate();
 
+  // Updates form values on input change
+  // Ref: https://react.dev/learn/responding-to-events
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {

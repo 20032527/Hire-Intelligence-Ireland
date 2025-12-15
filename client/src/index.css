@@ -3,6 +3,8 @@ body {
   background: #f7f7f7;
   color: #333;
 }
+/* Shared card layout for main pages */
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
 
 .auth-container, .dashboard, .ride-request, .ride-history {
   width: 350px;
@@ -29,6 +31,8 @@ button {
   cursor: pointer;
 }
 
+/* Button hover effect */
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/:hover */
 button:hover {
   background-color: #0070d1;
 }

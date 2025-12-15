@@ -1,4 +1,9 @@
+// Used for page navigation without reload
+// Ref: https://reactrouter.com/en/main/components/link
 import { Link } from "react-router-dom";
+
+// Accesses logged-in user data
+// Ref: https://react.dev/reference/react/useContext
 import { useAuth } from "../context/AuthContext";
 import { User } from "lucide-react";
 import "../styles/Dashboard.css";

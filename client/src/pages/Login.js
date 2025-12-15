@@ -5,10 +5,16 @@ import { useNavigate, Link } from "react-router-dom";
 import "../styles/Login.css";
 
 export default function Login() {
+
+  // Stores email and password input
+  // Ref: https://react.dev/learn/state-a-components-memory
+
   const [form, setForm] = useState({ email: "", password: "" });
   const { login } = useAuth();
   const navigate = useNavigate();
 
+  // Updates form fields on input change
+  // Ref: https://react.dev/learn/responding-to-events
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
@@ -16,6 +22,9 @@ export default function Login() {
   
     try {
       const { data } = await axios.post("/auth/login", form);
+
+      // Sends login data to backend
+      // Ref: https://axios-http.com/docs/post_example
       login(data);
       navigate("/dashboard");
     } catch (error) {
@@ -57,7 +66,9 @@ export default function Login() {
         <button type="submit">Login</button>
       </form>
 
-      
+      {/* Redirect to register page */}
+      {/* Ref: https://reactrouter.com/en/main/components/link */}
+
       <p style={{ marginTop: "10px" }}>
         Don't have an account?{" "}
         <Link to="/register" style={{ color: "#007bff", textDecoration: "none" }}>

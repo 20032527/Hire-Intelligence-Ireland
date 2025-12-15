@@ -9,12 +9,18 @@ export default function RentalHistoryPage() {
 
   const fetchRentals = async () => {
     try {
+
+      // Fetches rental history from backend
+  // Ref: https://axios-http.com/docs/example
       const res = await axios.get("/rentals/my");
       setRentals(res.data);
     } catch (err) {
       console.error("Failed to fetch rentals", err);
     }
   };
+
+  // Loads rentals when page opens
+  // Ref: https://react.dev/reference/react/useEffect
 
   useEffect(() => {
     fetchRentals();

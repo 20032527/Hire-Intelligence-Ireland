@@ -8,6 +8,9 @@ import GadgetList from "./pages/GadgetList";
 import RentalGadgetPage from "./pages/RentGadgetPage";
 import RentalHistoryPage from "./pages/RentalHistoryPage";
 
+/* Simple route protection based on login state */
+/* Ref: https://reactrouter.com/en/main/start/overview */
+
 const ProtectedRoute = ({ children }) => {
   const { user } = useAuth();
   return user ? children : <Login />;
@@ -15,6 +18,9 @@ const ProtectedRoute = ({ children }) => {
 
 export default function App() {
   return (
+
+    /* Provides auth state to the whole app */
+    /* Ref: https://react.dev/reference/react/createContext */
     <AuthProvider>
       <BrowserRouter>
         <Routes>

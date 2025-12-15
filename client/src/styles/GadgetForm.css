@@ -29,6 +29,9 @@
     border: 1px solid #ccc;
     border-radius: 12px;
     font-size: 15px;
+
+    /* Smooth focus transition */
+  /* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
     transition: all 0.3s ease;
   }
   
@@ -69,6 +72,9 @@
   }
   
   
+  /* Responsive styles for small screens */
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries */
+
   @media (max-width: 480px) {
     .page-container {
       width: 90%;

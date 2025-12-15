@@ -1,4 +1,5 @@
-
+/* Main page wrapper */
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/min-height */
 .page-container {
   padding: 30px 40px;
   font-family: "Poppins", sans-serif;
@@ -13,6 +14,9 @@
   font-weight: 600;
   color: #333;
 }
+
+/* Grid layout for gadget cards */
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout */
 
 .gadget-list {
   display: grid;
@@ -77,6 +81,8 @@
 }
 
 
+/* Zebra striping for rows */
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
 .admin-table tr:nth-child(even) {
   background-color: #fafafa;
 }

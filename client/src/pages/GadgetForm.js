@@ -3,6 +3,9 @@ import axios from "../api/axios";
 import "../styles/GadgetForm.css";
 
 export default function GadgetForm() {
+
+  // Holds gadget form input values
+  // Ref: https://react.dev/learn/state-a-components-memory
   const [form, setForm] = useState({
     name: "",
     pricePerDay: "",
@@ -12,8 +15,12 @@ export default function GadgetForm() {
 
 
   const submit = async (e) => {
-    e.preventDefault();
+    e.preventDefault();// prevents page refresh
+    // Ref: https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
     try {
+
+      // Sends form data to backend API
+      // Ref: https://axios-http.com/docs/post_example
       await axios.post("/gadgets/create", form);
       setMessage("Gadget added successfully!");
       setForm({ name: "", pricePerDay: "", availableQty: "" });
@@ -26,12 +33,17 @@ export default function GadgetForm() {
     <div className="page-container">
       <h2>Add Gadget</h2>
 
+      {/* Form for adding new gadget */}
+      {/* Ref: https://react.dev/learn/sharing-state-between-components */}
+
       <form className="gadget-form" onSubmit={submit}>
         <input
           type="text"
           placeholder="Gadget Name"
           value={form.name}
           onChange={(e) => setForm({ ...form, name: e.target.value })}
+
+          // Ref: https://react.dev/learn/updating-objects-in-state
         />
 
         <input

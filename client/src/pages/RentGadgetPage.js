@@ -15,9 +15,14 @@ export default function RentGadgetPage() {
     endDate: "",
   });
 
+
+  // Loads gadget list when page opens
+  // Ref: https://react.dev/reference/react/useEffect
   useEffect(() => {
     axios.get("/gadgets/list").then((res) => setGadgets(res.data));
   }, []);
+
+  // Submits rental request
 
   const submit = async () => {
     try {

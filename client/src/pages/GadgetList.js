@@ -4,6 +4,8 @@ import { useAuth } from "../context/AuthContext";
 import "../styles/GadgetList.css";
 
 export default function GadgetList() {
+  // Stores gadget data
+  // Ref: https://react.dev/learn/state-a-components-memory
   const [gadgets, setGadgets] = useState([]);
   const [editingId, setEditingId] = useState(null);
   const [editForm, setEditForm] = useState({
@@ -17,6 +19,8 @@ export default function GadgetList() {
   const { user } = useAuth();       
   const isAdmin = user?.role === "admin";  
 
+  // Fetches gadgets from backend
+  // Ref: https://axios-http.com/docs/example
   const fetchGadgets = async () => {
     try {
       const res = await axios.get("/gadgets/list");
@@ -26,11 +30,14 @@ export default function GadgetList() {
     }
   };
 
+  // Loads gadgets when page opens
+  // Ref: https://react.dev/reference/react/useEffect
   useEffect(() => {
     fetchGadgets();
   }, []);
 
   
+   // Deletes a gadget by id
   const deleteGadget = async (id) => {
     try {
       await axios.delete(`/gadgets/delete/${id}`);
@@ -42,7 +49,8 @@ export default function GadgetList() {
     }
   };
 
-  
+  // Enables edit mode for selected gadget
+
   const startEditing = (g) => {
     setEditingId(g._id);
     setEditForm({
@@ -52,7 +60,7 @@ export default function GadgetList() {
     });
   };
 
-  
+  // Saves updated gadget data
   const saveEdit = async () => {
     try {
       await axios.put(`/gadgets/update/${editingId}`, editForm);
@@ -73,7 +81,8 @@ export default function GadgetList() {
     <div className="page-container">
       <h2>Gadget List</h2>
 
-      
+      {/* Admin view with edit and delete options */}
+      {/* Ref: https://react.dev/learn/conditional-rendering */}
       {isAdmin ? (
         <table className="admin-table">
           <thead>

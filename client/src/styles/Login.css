@@ -1,7 +1,12 @@
+/* Page background and center layout */
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient */
 
 body {
   background: linear-gradient(135deg, #3f51b5, #0c0c0d); 
     font-family: "Poppins", sans-serif;
+
+    /* Centers login/register card */
+  /* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout */
     display: flex;
     justify-content: center;
     align-items: center;

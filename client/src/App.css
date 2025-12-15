@@ -7,11 +7,16 @@
   pointer-events: none;
 }
 
+/* Enable animation only if user allows motion */
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+/* App header layout */
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout */
 
 .App-header {
   background-color: #282c34;
@@ -27,6 +32,9 @@
 .App-link {
   color: #61dafb;
 }
+
+/* Logo rotation animation */
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes */
 
 @keyframes App-logo-spin {
   from {

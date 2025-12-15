@@ -1,4 +1,6 @@
 
+/* Centers content and sets page background */
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient */
 body {
     background: linear-gradient(135deg, #3f51b5, #201c29); 
     font-family: "Poppins", sans-serif;
@@ -10,14 +12,22 @@ body {
     align-items: center;
   }
   
-  
+  /* Centers dashboard vertically and horizontally */
+  /* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout */
   .dashboard {
     background: #fff;
     width: 400px;
     padding: 40px 30px;
     border-radius: 20px;
+
+    /* Adds depth effect */
+  /* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     text-align: center;
+
+    /* Smooth entrance animation */
+  /* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
+
     animation: fadeIn 0.7s ease-in-out;
   }
   
