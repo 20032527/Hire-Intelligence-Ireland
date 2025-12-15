@@ -18,7 +18,7 @@ app.listen(PORT, () => {
 });
 
 app.use(cors({
-  origin: '*',
+  origin: '3000',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true
 }));
