@@ -15,7 +15,7 @@ body {
   /* Centers dashboard vertically and horizontally */
   /* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout */
   .dashboard {
-    background: #252b82;
+    background: #ffffff;
     width: 400px;
     padding: 40px 30px;
     border-radius: 20px;
