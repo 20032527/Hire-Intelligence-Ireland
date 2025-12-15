@@ -7,8 +7,8 @@ const instance = axios.create({
   // API base URL for local development
 
   //baseURL: "https://hire-intelligence-ireland-2.onrender.com/v1",
-  https: "//hire-intelligence-ireland-4.onrender.com/V1",
-  //baseURL: "http://localhost:5001/v1",
+  //https: "//hire-intelligence-ireland-4.onrender.com/V1",
+  baseURL: "http://localhost:5001/v1",
 });
 
 // Adds logic before every request is sent

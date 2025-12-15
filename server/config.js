@@ -1,4 +1,4 @@
-/*module.exports = {
+module.exports = {
 
   // Server runs on this port
 
@@ -11,9 +11,9 @@
   // MongoDB connection string
 
   MONGO_URI: "mongodb+srv://sivanarayana:sivanarayana@easygadget.t4b1lox.mongodb.net/easygadget?retryWrites=true&w=majority",
-};*/
-module.exports = {
+};
+/*module.exports = {
   PORT: process.env.PORT,
   JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
   MONGO_URI: process.env.MONGO_URI,
-};
+};*/
