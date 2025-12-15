@@ -42,15 +42,69 @@ npm run prod
 cd server
 npm test
 
-# References:https://www.udemy.com/share/10205m3@zaKYsBfJsgVYTpK_OLRPtVqu6KYrHXPJCIUyuMazy-TI8bX-yVXqz65FjkuiELDNMQ==/
-https://www.w3schools.com/react/react_router.asp
-https://www.w3schools.com/react/react_usecontext.asp
-https://www.w3schools.com/react/react_forms.asp
-https://www.w3schools.com/nodejs/nodejs_api_auth.asp
-https://www.w3schools.com/nodejs/nodejs_express.asp
-https://www.w3schools.com/mongodb/mongodb_nodejs_connect_database.php
-https://www.w3schools.com/mongodb/mongodb_query_operators.php
-https://www.tutorialspoint.com/jest/jest-react-testing.htm
-https://www.digitalocean.com/community/tutorials/nodejs-jwt-expressjs
+# References:
+# Express.js
+Express routing: https://expressjs.com/en/guide/routing.html
+Express Router API: https://expressjs.com/en/5x/api.html#router
+Using middleware in Express: https://expressjs.com/en/guide/using-middleware.html
+Express error handling: https://expressjs.com/en/guide/error-handling.html
+
+# Authentication & Security
+JSON Web Token (JWT) official docs: https://jwt.io/introduction
+jsonwebtoken npm package: https://github.com/auth0/node-jsonwebtoken
+Bearer token in HTTP Authorization header: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization
+
+# MongoDB & Mongoose
+Mongoose schemas: https://mongoosejs.com/docs/guide.html
+Mongoose models: https://mongoosejs.com/docs/models.html
+Mongoose queries & CRUD: https://mongoosejs.com/docs/queries.html
+Mongoose connections: https://mongoosejs.com/docs/connections.html
+MongoDB ObjectId: https://www.mongodb.com/docs/manual/reference/method/ObjectId/
+
+# Password Hashing
+bcryptjs npm package: https://www.npmjs.com/package/bcryptjs
+Password hashing basics (OWASP): https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication
+
+# CORS & Middleware
+CORS middleware (official GitHub): https://github.com/expressjs/cors
+What is CORS (MDN): https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+
+# React Core
+React Hooks (useState, useEffect): https://react.dev/reference/react
+React Context API: https://react.dev/reference/react/createContext
+React StrictMode: https://react.dev/reference/react/StrictMode
+
+# React Router
+React Router v6 docs: https://reactrouter.com/en/main
+BrowserRouter, Routes, Route: https://reactrouter.com/en/main/components/browser-router
+useNavigate hook: https://reactrouter.com/en/main/hooks/use-navigate
+
+# Axios
+Axios official documentation: https://axios-http.com/docs/intro
+Axios interceptors: https://axios-http.com/docs/interceptors
+
+# Browser APIs
+Local Storage (MDN): https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+# Jest
+Jest official docs: https://jestjs.io/docs/getting-started
+Mocking with Jest: https://jestjs.io/docs/mock-functions
+
+# Supertest
+Supertest GitHub: https://github.com/ladjs/supertest
+
+# MongoDB In-Memory Testing
+mongodb-memory-server: https://github.com/nodkz/mongodb-memory-server
+
+# CSS Basics & Layout
+CSS Grid layout (MDN): https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+CSS Flexbox (MDN): https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout
+CSS animations & keyframes: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
+Media queries (responsive design): https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+
+# performance & Monitoring
+Web Vitals (Google): https://web.dev/vitals/
+web-vitals npm package: https://github.com/GoogleChrome/web-vitals
+
 
 
